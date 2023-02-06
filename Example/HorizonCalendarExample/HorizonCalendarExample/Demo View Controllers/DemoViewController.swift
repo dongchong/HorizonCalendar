@@ -53,8 +53,8 @@ class DemoViewController: UIViewController {
         calendarView.trailingAnchor.constraint(
           lessThanOrEqualTo: view.layoutMarginsGuide.trailingAnchor),
         calendarView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        calendarView.widthAnchor.constraint(lessThanOrEqualToConstant: 375),
-        calendarView.widthAnchor.constraint(equalToConstant: 375).prioritize(at: .defaultLow),
+        calendarView.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width),
+        calendarView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).prioritize(at: .defaultLow),
       ])
     case .horizontal:
       NSLayoutConstraint.activate([
@@ -62,8 +62,8 @@ class DemoViewController: UIViewController {
         calendarView.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor),
         calendarView.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor),
         calendarView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        calendarView.widthAnchor.constraint(lessThanOrEqualToConstant: 375),
-        calendarView.widthAnchor.constraint(equalToConstant: 375).prioritize(at: .defaultLow),
+        calendarView.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width-100),
+        calendarView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-100).prioritize(at: .defaultLow),
       ])
     }
   }

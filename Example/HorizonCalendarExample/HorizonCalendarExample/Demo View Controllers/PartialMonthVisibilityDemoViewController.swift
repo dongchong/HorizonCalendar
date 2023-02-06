@@ -30,7 +30,8 @@ final class PartialMonthVisibilityDemoViewController: DemoViewController {
     return CalendarViewContent(
       calendar: calendar,
       visibleDateRange: startDate...endDate,
-      monthsLayout: monthsLayout)
+      monthsLayout: monthsLayout,
+      whetherShowWeekView: false)
 
       .interMonthSpacing(24)
       .verticalDayMargin(8)
